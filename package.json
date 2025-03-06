@@ -2,7 +2,7 @@
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://keerthi-4301.github.io/portfolio/",
+  "homepage": "https://keerthiswaroop.netlify.app/",
   "dependencies": {
     "jquery": "^3.5.1",
     "package.json": "^0.0.0",
