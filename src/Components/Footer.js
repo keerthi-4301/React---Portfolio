@@ -19,7 +19,7 @@ class Footer extends Component {
            </ul>
 
            <ul>
-            <li>Sharma's Sols ♥️</li>
+            <li>👾 Keerthi Swaroop Satambakkam 👾</li>
            </ul>
 
 

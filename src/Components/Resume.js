@@ -20,15 +20,15 @@ class Resume extends Component {
       </div>
     ));
 
-    // Mapping work experience
+    // Mapping work experience data
     const workList = work.map((job) => (
-      <div key={job.company}>
+      <div key={job.company} className="experience">
         <h3>{job.company}</h3>
         <p className="info">
           {job.title} <span>&bull;</span>
           <em className="date">{job.years}</em>
         </p>
-        <p>{job.description}</p>
+        <p className="summary">{job.summary}</p> {/* Use a summarized version */}
       </div>
     ));
 
@@ -100,20 +100,10 @@ class Resume extends Component {
 </div>
 
 
-        {/* Education Section */}
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1>
-              <span>Education</span>
-            </h1>
-          </div>
-          <div className="nine columns main-col">{educationList}</div>
-        </div>
-
         <div className="row download-resume">
   <div className="twelve columns">
     <a
-      href="https://drive.google.com/file/d/1z_CiURDNuhYIiFDD6SR5Sn-awtEG-uff/view?usp=drive_link" // Dynamically loads the URL
+      href="https://drive.google.com/file/d/1XhA0H6I-LoyE9BEH4GE_-8h9hklg_g5k/view?usp=sharing" // Dynamically loads the URL
       className="button"
       target="_blank" // Opens the resume in a new tab
       rel="noopener noreferrer" // Ensures secure link navigation

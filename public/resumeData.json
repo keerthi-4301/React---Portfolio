@@ -1,13 +1,13 @@
 {
   "main": {
     "name": "Keerthi Swaroop Satambakkam",
-    "occupation": "Data Engineer",
+    "occupation": "Data Engineer & Analyst",
     "description": "Passionate about building scalable data platforms.",
     "image": "keerthi.PNG",
     "bio": "My name is Keerthi Swaroop Satambakkam. I'm a skilled Data Engineer with expertise in Snowflake, Apache Airflow, and modern ETL/ELT workflows. I specialize in building scalable and efficient data pipelines.",
     "contactmessage": "Get in touch with me to receive further details.",
-    "email": "ksatamba1103@gmail.com",
-    "phone": "+1 (609)-464-4479",
+    "email": "ksatamba0103@gmail.com",
+    "phone": "+1 (518)-207-4151",
     "address": {
       "street": "4211 Ridge Top Road",
       "city": "Fairfax",
@@ -15,22 +15,12 @@
       "zip": "22030"
     },
     "website": "",
-    "resumedownload": "https://drive.google.com/file/d/1z_CiURDNuhYIiFDD6SR5Sn-awtEG-uff/view?usp=drive_link",
+    "resumedownload": "https://drive.google.com/file/d/1XhA0H6I-LoyE9BEH4GE_-8h9hklg_g5k/view?usp=sharing",
     "social": [
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/keerthiswaroop.s/",
-        "className": "fa fa-facebook"
-      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/ksatamba/",
         "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/keerthi_swaroop_0311/",
-        "className": "fa fa-instagram"
       },
       {
         "name": "github",
@@ -44,29 +34,28 @@
     "education": [
       {
         "school": "George Mason University",
-        "degree": "Master's in Data Analytical Engineering",
-        "graduated": "2022-2024"
+        "degree": "Master's in Data Analytical Engineering"
       },
       {
         "school": "Vardhaman College Of Engineering",
-        "degree": "Bachelor of Technology in Computer Science",
-        "graduated": "2018-2022"
+        "degree": "Bachelor's in Computer Science and Engineering"
       }
     ],
     "work": [
-      {
-        "company": "Inditech",
-        "title": "Data Scientist Intern",
-        "years": "Jan 2022 - June 2022",
-        "description": "Developed machine learning models and optimized business processes for clients."
-      },
-      {
-        "company": "George Mason University",
-        "title": "Volunteer Research Assistant",
-        "years": "Aug 2022 - May 2024",
-        "description": "Conducted systematic literature research on personalized education strategies."
-      }
-    ],
+    {
+        "company": "Sentara Healthcare",
+        "title": "Data Engineer",
+        "years": "Aug 2023 - Present",
+        "summary": "Designed and optimized an AWS-based data warehouse, integrating multiple EHR systems to enhance healthcare data accessibility. Developed scalable ETL pipelines with Apache Airflow & AWS Glue, processing millions of patient records monthly. Improved query performance on Redshift and implemented real-time analytics with Tableau, accelerating healthcare insights. Leveraged Docker & Kubernetes for efficient deployments and resource optimization."
+    },
+    {
+        "company": "Brane Enterprises, India",
+        "title": "Data Analyst",
+        "years": "Jul 2020 - Jun 2022",
+        "summary": "Developed a predictive credit scoring model using machine learning, improving loan approval accuracy. Designed and optimized real-time ETL workflows with Apache Airflow & Azure Data Factory, reducing processing latency. Built Power BI dashboards with real-time Kafka streams, enabling faster decision-making for credit risk analysis. Deployed scalable models on Azure Kubernetes Service (AKS) and automated infrastructure provisioning with Terraform."
+    }
+]
+,
     "certifications": [
       {
         "title": "Snowflake SnowPro Core Certification",
@@ -83,74 +72,53 @@
     ]
 
   },
-  "portfolio": {
-    "projects": [
-      {
-        "title": "TogEther",
-        "category": "Decentralized Application Connects Startups and Investors",
-        "image": "together.png",
-        "url": "https://github.com/nagadeepsharma/together",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Tagg",
-        "category": "Library Management System (Js, Html, Css, Django)",
-        "image": "tagg.png",
-        "url": "https://github.com/nagadeepsharma/finallibrary",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Django-Todo",
-        "category": "Note Your Works To-do",
-        "image": "to.png",
-        "url": "https://github.com/nagadeepsharma/todo",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Vennila-Todo",
-        "category": "VennilaJs-Todo",
-        "image": "todo.png",
-        "url": "https://nagadeepsharma.github.io/VennilaTodo/",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Fastest Finger First",
-        "category": "VennilaJs Number Game",
-        "image": "numbern.jpg",
-        "url": "https://nagadeepsharma.github.io/VennilaNumberGame/",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Remember Your Color",
-        "category": "VennilaJs Color Game",
-        "image": "color.jpg",
-        "url": "https://nagadeepsharma.github.io/VennilaColorGame/",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Amazon-Clone",
-        "category": "Ract-Js-amazon-clone-Crdud",
-        "image": "amazon.jpg",
-        "url": "https://github.com/nagadeepsharma/amazon-clone",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "Instant-Forms",
-        "category": "Js-Forms-Dynamic",
-        "image": "instant.png",
-        "url": "https://nagadeepsharma.github.io/Instant-Forms/",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      },
-      {
-        "title": "React-Django Crud",
-        "category": "React Js-Api-React",
-        "image": "ss.jpg",
-        "url": "https://github.com/nagadeepsharma/django-react-crud.git",
-        "description": "A decentralized application designed to bridge the gap between startups and investors."
-      }
-
-    ]
-  },
+ "portfolio": {
+  "projects": [
+    {
+      "title": "YouTube Data Analysis",
+      "category": "AWS-Based Data Pipeline",
+      "image": "youtube-analysis.png",
+      "url": "https://github.com/keerthi-4301/youtube-data-analysis",
+      "description": "AWS-based pipeline to analyze YouTube trending data using Glue, Lambda, and QuickSight."
+    },
+    {
+      "title": "House Sales Dashboard",
+      "category": "Tableau Visualization",
+      "image": "house-sales-dashboard.png",
+      "url": "https://github.com/keerthi-4301/Housesales_Tableau_dashborad",
+      "description": "Interactive Tableau dashboard visualizing King County house sales trends."
+    },
+    {
+      "title": "Auto-Ingest Twitter to S3 & Snowflake",
+      "category": "Real-Time Data Pipeline",
+      "image": "twitter-s3-snowflake.png",
+      "url": "https://github.com/keerthi-4301/Auto-Ingest-Twitter-S3-Snowfalke",
+      "description": "Real-time tweet ingestion pipeline using AWS S3 and Snowflake."
+    },
+    {
+      "title": "Twitter Airflow S3 Pipeline",
+      "category": "ETL Pipeline with Airflow",
+      "image": "twitter-airflow.png",
+      "url": "https://github.com/keerthi-4301/twitter-airflow-S3-pipeline",
+      "description": "Twitter Data Pipeline using Apache Airflow, Tweepy, and S3."
+    },
+    {
+      "title": "Banking Data Integration",
+      "category": "IBM DataStage & Snowflake",
+      "image": "banking-snowflake.png",
+      "url": "https://github.com/keerthi-4301/Banking-Data-Integration-Snowflake",
+      "description": "Enterprise data integration from Db2 Warehouse to Snowflake using IBM DataStage."
+    },
+    {
+      "title": "Data Ingestion to Snowflake",
+      "category": "Multi-Method Data Loading",
+      "image": "data-ingestion-snowflake.png",
+      "url": "https://github.com/keerthi-4301/Ingesting-Data-into-Snowflake",
+      "description": "Demonstrates various ways to load data into Snowflake efficiently."
+    }
+  ]
+}
+,
   "testimonials": {
     "testimonials": [
       {

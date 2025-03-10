@@ -1,100 +1,79 @@
 import React, { useState } from 'react';
 
-const Contact = ({ data }) => {
-   const [url, setUrl] = useState('mailto:test@example.com?subject=subject&body=body');
-   const [name, setName] = useState('');
-   const [subject, setSubject] = useState('');
-   const [email, setEmail] = useState('');
-   const [message, setMessage] = useState('');
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
 
-   console.log(data)
+  const [status, setStatus] = useState({ message: '', error: false });
 
-    const handleClick = (e) => {
-       e.preventDefault();
-      window.open(`mailto:nagadeep.chandragiri@gmail.com?subject=${subject}&body=${name}: ${message}`);
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Validate inputs
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus({ message: 'Please fill in all required fields.', error: true });
+      return;
     }
+
+    // Construct mailto link
+    const mailtoLink = `mailto:skeerthiswaroop0103@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(formData.message)}`;
     
+    // Open email client
+    window.location.href = mailtoLink;
+    setStatus({ message: 'Redirecting to your email client...', error: false });
+  };
 
-    return (
-      <section id="contact">
+  return (
+    <section id="contact">
+      <div className="container">
+        <h2 className="section-title">Get in Touch</h2>
+        
+        <div className="contact-form">
+          {/* Left: Contact Form */}
+          <div className="form-left">
+            <form onSubmit={handleSubmit}>
+              <label>Name <span className="required">*</span></label>
+              <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
 
-         <div className="row section-head">
+              <label>Email <span className="required">*</span></label>
+              <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
 
-            <div className="two columns header-col">
+              <label>Subject</label>
+              <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
 
-               <h1><span>Get In Touch.</span></h1>
+              <label>Message <span className="required">*</span></label>
+              <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
 
-            </div>
+              <button type="submit" className="submit-btn">Send Message</button>
+            </form>
 
-            <div className="ten columns">
+            {/* Status Messages */}
+            {status.message && <p className={status.error ? 'error-message' : 'success-message'}>{status.message}</p>}
+          </div>
 
-                  <p className="lead">{data?.message}</p>
-
-            </div>
-
-         </div>
-
-         <div className="row">
-            <div className="eight columns">
-
-               <form id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input value={name} type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={e => setName(e.target.value)}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input value={email} type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={e=> setEmail(e.target.value)}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input value={subject} type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={e => setSubject(e.target.value)}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea value={message} onChange={e => setMessage(e.target.value)} cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button type='submit' onClick={handleClick} className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
-                  </div>
-					</fieldset>
-				   </form>
-
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
-           </div>
-
-
-            <aside className="four columns footer-widgets">
-               <div className="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p className="address">
-						   {data?.name}<br />
-						   {data?.address.street} <br />
-						   {data?.address.city}, {data?.address.state} {data?.address.zip}<br />
-						   <span>{data?.phone}</span>
-					   </p>
-				   </div>
-
-               <div className="widget widget_tweets">
-
-		         </div>
-            </aside>
+          {/* Right: Contact Info */}
+          <div className="form-right">
+            <h3>Address & Contact</h3>
+            <p>Keerthi Swaroop Satambakkam</p>
+            <p>Fairfax, VA 22030</p>
+            <p>Phone: <a href="tel:+15182074151">+1 (518)-207-4151</a></p>
+            <p>Email: <a href="mailto:ksatamba0103@gmail.com">ksatamba0103@gmail.com</a></p>
+            
+          </div>
+        </div>
       </div>
-   </section>
-    );
-}
+    </section>
+  );
+};
 
 export default Contact;

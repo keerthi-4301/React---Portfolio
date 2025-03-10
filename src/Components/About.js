@@ -17,36 +17,28 @@ class About extends Component {
 
     return (
       <section id="about">
-        <div className="profile-pic-wrapper">
-          <img className="profile-pic" src={profilepic} alt="Keerthi Swaroop's Profile Pic" />
-        </div>
-        <div className="main-col">
-          <h2>About Me</h2>
-          <p>
-            Experienced Data Engineer with 3+ years of expertise in building scalable data pipelines and data warehousing.
-            Proficient in AWS, Azure, Python, SQL, and Apache technologies, with a strong track record of improving data
-            integration processes and enhancing analytics performance. Skilled in creating real-time dashboards, optimizing
-            ETL workflows, and ensuring data quality and compliance. Adept at collaborating with cross-functional teams to
-            deliver actionable insights, streamline operations, and support data-driven decision-making.
-          </p>
-          <div className="skills">
-            <h2>Skills</h2>
-            <ul>
-              <li><strong>Methodologies:</strong> SDLC, Agile, Waterfall</li>
-              <li><strong>Programming Languages:</strong> Python, SQL, R</li>
-              <li><strong>Packages:</strong> NumPy, Pandas, SciPy, Scikit-learn, TensorFlow, PySpark</li>
-              <li><strong>Visualization Tools:</strong> Tableau, Power BI, Advanced Excel (Pivot Tables, VLOOKUP), Matplotlib, Plotly, Seaborn</li>
-              <li><strong>IDEs:</strong> Visual Studio Code, PyCharm, Jupyter Notebook</li>
-              <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, Redshift, Lambda, Glue, Athena), Azure Databricks, Snowflake</li>
-              <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, DynamoDB, Oracle, Google Big
-              Query </li>
-              <li><strong>Big Technology / Engineering Concepts:</strong> Apache Airflow, Apache Kafka, Apache Hadoop, Apache Spark, ETL/ELT, HDFS, Hive, Docker, Kubernetes</li>
-              <li><strong>Other Technical Skills:</strong> Data Warehousing, Data Mining, Machine Learning Algorithms, Git, Data Quality and Governance, Big Data, Advance Analytics, Statistical Methods</li>
-              <li><strong>Operating Systems:</strong> Windows, Linux, Mac OS</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <div className="profile-pic-wrapper">
+    <img className="profile-pic" src={profilepic} alt="Keerthi Swaroop's Profile Pic" />
+  </div>
+  <div className="main-col">
+    <div className="about-text">
+      <h2>About Me</h2>
+      <p>
+      I am a <strong>Data Engineer & Analyst</strong> passionate about building scalable data pipelines, optimizing ETL workflows, and architecting cloud-based solutions. Proficient in AWS, Azure, Python, SQL, and big data technologies like Apache Spark and Snowflake, I specialize in data modeling, real-time analytics, and machine learning solutions to transform raw data into actionable insights.
+      </p>
+      <p>
+      <strong>What drives me?</strong> The thrill of solving complex data challenges and unlocking business intelligence through innovation. I enjoy collaborating with cross-functional teams to design efficient data strategies and enable data-driven decision-making at scale.
+      </p>
+    </div>
+    
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Master’s in Data Analytics Engineering</strong> – George Mason University</li>
+      <li><strong>Bachelor’s in Computer Science & Engineering</strong> – Jawaharlal Nehru Technological University</li>
+    </ul>
+  </div>
+</section>
+
     );    
   }
 } 
