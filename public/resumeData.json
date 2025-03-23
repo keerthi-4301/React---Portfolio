@@ -115,7 +115,14 @@
       "image": "data-ingestion-snowflake.png",
       "url": "https://github.com/keerthi-4301/Ingesting-Data-into-Snowflake",
       "description": "Demonstrates various ways to load data into Snowflake efficiently."
-    }
+    },
+    {
+      "title": "F1 Real-Time Data Pipeline",
+      "category": "Streaming | Cloud | Automation",
+      "image": "f1-realtime-pipeline.png",
+      "url": "https://github.com/keerthi-4301/F1_Realtime_Data_Pipeline",
+      "description": "Real-time data pipeline that streams F1 2024 race data using FastF1,Kafka, S3,Snowflake using Airflow on AWS EC2."
+    }    
   ]
 }
 ,
